@@ -1,0 +1,18 @@
+appId: com.shadeai.app
+productName: Shade AI
+directories:
+  buildResources: build
+files:
+  - dist/**/*
+  - dist-electron/**/*
+  - package.json
+win:
+  target: nsis
+  sign: false
+mac:
+  target: dmg
+  category: public.app-category.productivity
+linux:
+  target:
+    - AppImage
+  category: Utility
